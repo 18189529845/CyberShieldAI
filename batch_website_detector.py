@@ -1623,7 +1623,7 @@ def get_urls_from_mysql():
         connection = pymysql.connect(**DB_CONFIG)
         with connection.cursor() as cursor:
             # 执行SQL查询
-            sql = "select url from gat_illegal_result where  discovery_method not in (4,5)   and url not in (select url from gat_illegal_result_detector)   LIMIT 5"
+            sql = "select url from gat_illegal_result where  discovery_method not in (4,5)   and url not in (select url from gat_illegal_result_detector)   order by update_time desc   LIMIT 5"
             # sql = "select url from gat_illegal_result where  discovery_method not in (4,5)  LIMIT 5"
             cursor.execute(sql)
             # 获取所有查询结果
