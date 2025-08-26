@@ -1,0 +1,19 @@
+{
+    "db_config": {
+        "host": "192.168.2.41",
+        "port": 3306,
+        "user": "root",
+        "password": "df!2020?OK",
+        "db": "ntmv3",
+        "charset": "utf8mb4",
+        "use_dict_cursor": true
+    },
+    "max_workers": 10,
+    "timeout": 10,
+    "max_subpages": 50,
+    "cache_ttl": 3600,
+    "subpage_timeout": 8,
+    "blacklist_update_interval": 86400,
+    "log_level": "INFO",
+    "log_file": "website_detector.log"
+}
