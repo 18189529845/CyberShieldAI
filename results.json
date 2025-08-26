@@ -1,12 +1,12 @@
 [
   {
-    "网址": "http://www.gsjyf.com",
-    "风险等级": "中风险",
-    "风险评分": "43%",
-    "风险描述": "⚠️ 该网站存在一定安全风险\n• 域名注册期限过短（少于1年）(whois请求可能存在请求网络异常)\n• 网站未启用HTTPS加密\n\n💡 建议：请勿在此网站输入个人信息或进行任何交易",
-    "检测时间": "2025-08-26 15:54:26",
+    "网址": "http://www.zymrs.com",
+    "风险等级": "高风险",
+    "风险评分": "100%",
+    "风险描述": "🚨 该网站存在严重安全风险\n• 域名注册期限过短（少于1年）(whois请求可能存在请求网络异常)\n• 网站未启用HTTPS加密\n• 子页面中发现高敏感内容\n• 发现 50 个可疑子页面\n• 子页面包含 1091 个网站违禁词相关关键词\n• 子页面包含 259 个涉黄相关关键词\n• 子页面包含 50 个涉赌相关关键词\n• 子页面包含 52 个涉政相关关键词\n• 子页面包含 2 个涉枪暴相关关键词\n• 子页面包含 4 个涉电诈相关关键词\n\n💡 建议：请勿在此网站输入个人信息或进行任何交易",
+    "检测时间": "2025-08-26 15:57:13",
     "详细特征": {
-      "网址": "http://www.gsjyf.com",
+      "网址": "http://www.zymrs.com",
       "域名长度": 13,
       "子域名数量": 2,
       "包含连字符": 0,
@@ -15,38 +15,50 @@
       "数字比例": 0.0,
       "特殊字符比例": 0.15,
       "辅音比例": 0.77,
-      "熵值（随机性）": 3.18,
+      "熵值（随机性）": 3.03,
       "黑名单匹配": 0,
       "品牌相似度": 0.15,
       "疑似钓鱼": 0,
       "同形异义攻击": 0,
       "可疑关键词组合": 0,
-      "域名年龄（天）": 1919,
+      "域名年龄（天）": 159,
       "新域名（30天内）": 0,
       "极新域名（7天内）": 0,
-      "到期剩余天数": 271,
+      "到期剩余天数": 205,
       "短期注册": 1,
       "可疑注册商": 0,
-      "内容长度": 0,
-      "文本长度": 0,
-      "图片数量": 0,
-      "链接数量": 0,
-      "表单数量": 0,
-      "外部链接数": 0,
-      "敏感词总数": 0,
-      "敏感词占比": 0,
-      "有标题": 0,
-      "标题长度": 0,
-      "有描述": 0,
-      "有关键词": 0,
+      "内容长度": 175712,
+      "文本长度": 4197,
+      "图片数量": 11,
+      "链接数量": 228,
+      "表单数量": 1,
+      "外部链接数": 30,
+      "违规书籍关键词数量": 0,
+      "网站违禁词数量": 26,
+      "涉稳关键词数量": 0,
+      "涉黄关键词数量": 6,
+      "涉赌关键词数量": 1,
+      "涉政关键词数量": 1,
+      "涉枪暴关键词数量": 0,
+      "涉恐涉邪关键词数量": 0,
+      "涉黑灰产关键词数量": 0,
+      "涉电诈关键词数量": 0,
+      "违规化学品关键词数量": 0,
+      "敏感词总数": 34,
+      "敏感词占比": 0.97,
+      "有标题": 1,
+      "标题长度": 174,
+      "有描述": 1,
+      "有关键词": 1,
       "有robots": 0,
       "有登录表单": 0,
       "有联系信息": 0,
       "有隐私政策": 0,
-      "可疑图片": 0,
-      "脚本数量": 0,
+      "可疑图片": 2,
+      "脚本数量": 17,
       "可疑脚本": 0,
       "重定向次数": 0,
+      "最终网址": "http://www.zymrs.com",
       "域名变更": 0,
       "有SSL证书": 0,
       "SSL有效": 0,
@@ -54,46 +66,393 @@
       "证书太新": 0,
       "域名匹配": 0,
       "通配符证书": 0,
-      "违规书籍关键词数量": 0,
-      "网站违禁词数量": 0,
-      "涉稳关键词数量": 0,
-      "涉黄关键词数量": 0,
-      "涉赌关键词数量": 0,
-      "涉政关键词数量": 0,
-      "涉枪暴关键词数量": 0,
-      "涉恐涉邪关键词数量": 0,
-      "涉黑灰产关键词数量": 0,
-      "涉电诈关键词数量": 0,
-      "违规化学品关键词数量": 0,
       "DNS解析成功": 1,
       "IP数量": 1,
-      "首个IP": "123.57.231.206",
+      "首个IP": "38.238.6.3",
       "IP黑名单": 0,
       "有MX记录": 0,
       "MX记录数": 0,
       "有SPF记录": 0,
-      "响应时间": 1.11,
-      "HTTP状态码": 301,
+      "响应时间": 0.52,
+      "HTTP状态码": 400,
       "可访问": 1,
       "服务器信息": "nginx",
-      "HSTS安全头": 1,
+      "HSTS安全头": 0,
       "X-Frame-Options": 0,
       "X-Content-Type-Options": 0,
       "X-XSS-Protection": 0,
       "Content-Security-Policy": 0,
-      "检测子页面数量": 0,
-      "可疑子页面数": 0,
-      "子页面平均风险": 0.0,
-      "包含敏感子页面": 0,
-      "子页面中发现的关键词统计": {},
-      "子页面详细信息": []
+      "检测子页面数量": 50,
+      "可疑子页面数": 50,
+      "子页面平均风险": 100.0,
+      "包含敏感子页面": 1,
+      "子页面中发现的关键词统计": {
+        "网站违禁词": 1091,
+        "涉黄": 259,
+        "涉赌": 50,
+        "涉政": 52,
+        "涉枪暴": 2,
+        "涉电诈": 4
+      },
+      "子页面详细信息": [
+        {
+          "url": "http://www.zymrs.com/news/555f599439.html",
+          "risk_score": 100,
+          "keyword_count": 26,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/422b599572.html",
+          "risk_score": 100,
+          "keyword_count": 28,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/521a599473.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/cmjq/",
+          "risk_score": 100,
+          "keyword_count": 27,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/html/555f599439.html",
+          "risk_score": 100,
+          "keyword_count": 27,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/75e599919.html",
+          "risk_score": 100,
+          "keyword_count": 31,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/504e599490.html",
+          "risk_score": 100,
+          "keyword_count": 23,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/77c599917.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/573d599421.html",
+          "risk_score": 100,
+          "keyword_count": 33,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/gczp/",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/news/98d599896.html",
+          "risk_score": 100,
+          "keyword_count": 34,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/503b599491.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/28.html",
+          "risk_score": 100,
+          "keyword_count": 26,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/31.html",
+          "risk_score": 100,
+          "keyword_count": 34,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/572f599422.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/489f599505.html",
+          "risk_score": 100,
+          "keyword_count": 31,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/56e599938.html",
+          "risk_score": 100,
+          "keyword_count": 33,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/thyp/",
+          "risk_score": 100,
+          "keyword_count": 34,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/",
+          "risk_score": 100,
+          "keyword_count": 29,
+          "has_login_form": 0,
+          "script_count": 17
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/25.html",
+          "risk_score": 100,
+          "keyword_count": 30,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/585c599409.html",
+          "risk_score": 100,
+          "keyword_count": 35,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/zbyh/",
+          "risk_score": 100,
+          "keyword_count": 34,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/news/1b599993.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/26.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/95d599899.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/526c599468.html",
+          "risk_score": 100,
+          "keyword_count": 28,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/30.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/44b599950.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/514c599480.html",
+          "risk_score": 100,
+          "keyword_count": 23,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/491b599503.html",
+          "risk_score": 100,
+          "keyword_count": 27,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/55c599939.html",
+          "risk_score": 100,
+          "keyword_count": 28,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/wpcg/",
+          "risk_score": 100,
+          "keyword_count": 33,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/html/420f599574.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/488a599506.html",
+          "risk_score": 100,
+          "keyword_count": 25,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/579f599415.html",
+          "risk_score": 100,
+          "keyword_count": 31,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/27.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/427d599567.html",
+          "risk_score": 100,
+          "keyword_count": 30,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/577d599417.html",
+          "risk_score": 100,
+          "keyword_count": 24,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/70b599924.html",
+          "risk_score": 100,
+          "keyword_count": 33,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/419e599575.html",
+          "risk_score": 100,
+          "keyword_count": 24,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/29.html",
+          "risk_score": 100,
+          "keyword_count": 31,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/tptk/",
+          "risk_score": 100,
+          "keyword_count": 29,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/dydp/",
+          "risk_score": 100,
+          "keyword_count": 37,
+          "has_login_form": 0,
+          "script_count": 13
+        },
+        {
+          "url": "http://www.zymrs.com/index.php/vodtype/24.html",
+          "risk_score": 100,
+          "keyword_count": 31,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/549e599445.html",
+          "risk_score": 100,
+          "keyword_count": 23,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/84c599910.html",
+          "risk_score": 100,
+          "keyword_count": 28,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/479f599515.html",
+          "risk_score": 100,
+          "keyword_count": 23,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/news/594d599400.html",
+          "risk_score": 100,
+          "keyword_count": 26,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/html/540f599454.html",
+          "risk_score": 100,
+          "keyword_count": 32,
+          "has_login_form": 0,
+          "script_count": 14
+        },
+        {
+          "url": "http://www.zymrs.com/baike/",
+          "risk_score": 100,
+          "keyword_count": 28,
+          "has_login_form": 0,
+          "script_count": 13
+        }
+      ]
     },
     "英文原文": {
-      "url": "http://www.gsjyf.com",
-      "risk_level": "MEDIUM",
-      "risk_score": 43,
+      "url": "http://www.zymrs.com",
+      "risk_level": "HIGH",
+      "risk_score": 100,
       "features": {
-        "url": "http://www.gsjyf.com",
+        "url": "http://www.zymrs.com",
         "domain_length": 13,
         "subdomain_count": 2,
         "has_hyphen": 0,
@@ -102,38 +461,50 @@
         "digit_ratio": 0.0,
         "special_char_ratio": 0.15,
         "consonant_ratio": 0.77,
-        "entropy": 3.18,
+        "entropy": 3.03,
         "in_blacklist": 0,
         "brand_similarity": 0.15,
         "potential_phishing": 0,
         "homograph_attack": 0,
         "suspicious_combo": 0,
-        "domain_age_days": 1919,
+        "domain_age_days": 159,
         "is_new_domain": 0,
         "is_very_new_domain": 0,
-        "days_to_expire": 271,
+        "days_to_expire": 205,
         "short_registration": 1,
         "suspicious_registrar": 0,
-        "content_length": 0,
-        "text_length": 0,
-        "image_count": 0,
-        "link_count": 0,
-        "form_count": 0,
-        "external_links": 0,
-        "sensitive_keyword_count": 0,
-        "sensitive_keyword_ratio": 0,
-        "has_title": 0,
-        "title_length": 0,
-        "has_description": 0,
-        "has_keywords": 0,
+        "content_length": 175712,
+        "text_length": 4197,
+        "image_count": 11,
+        "link_count": 228,
+        "form_count": 1,
+        "external_links": 30,
+        "sensitive_违规书籍": 0,
+        "sensitive_网站违禁词": 26,
+        "sensitive_涉稳": 0,
+        "sensitive_涉黄": 6,
+        "sensitive_涉赌": 1,
+        "sensitive_涉政": 1,
+        "sensitive_涉枪暴": 0,
+        "sensitive_涉恐涉邪": 0,
+        "sensitive_涉黑灰产": 0,
+        "sensitive_涉电诈": 0,
+        "sensitive_违规化学品": 0,
+        "sensitive_keyword_count": 34,
+        "sensitive_keyword_ratio": 0.97,
+        "has_title": 1,
+        "title_length": 174,
+        "has_description": 1,
+        "has_keywords": 1,
         "has_robots": 0,
         "has_login_form": 0,
         "has_contact_info": 0,
         "has_privacy_policy": 0,
-        "suspicious_images": 0,
-        "script_count": 0,
+        "suspicious_images": 2,
+        "script_count": 17,
         "suspicious_scripts": 0,
         "redirect_count": 0,
+        "final_url": "http://www.zymrs.com",
         "domain_changed": 0,
         "has_ssl": 0,
         "ssl_valid": 0,
@@ -142,1480 +513,389 @@
         "cert_too_new": 0,
         "ssl_domain_match": 0,
         "wildcard_cert": 0,
-        "sensitive_违规书籍": 0,
-        "sensitive_网站违禁词": 0,
-        "sensitive_涉稳": 0,
-        "sensitive_涉黄": 0,
-        "sensitive_涉赌": 0,
-        "sensitive_涉政": 0,
-        "sensitive_涉枪暴": 0,
-        "sensitive_涉恐涉邪": 0,
-        "sensitive_涉黑灰产": 0,
-        "sensitive_涉电诈": 0,
-        "sensitive_违规化学品": 0,
         "dns_resolved": 1,
         "ip_count": 1,
-        "first_ip": "123.57.231.206",
+        "first_ip": "38.238.6.3",
         "blacklisted_ip": 0,
         "has_mx": 0,
         "mx_count": 0,
         "has_spf": 0,
-        "response_time": 1.11,
-        "http_status": 301,
+        "response_time": 0.52,
+        "http_status": 400,
         "web_accessible": 1,
         "server_header": "nginx",
         "powered_by": "",
-        "hsts": 1,
-        "x_frame_options": 0,
-        "x_content_type": 0,
-        "x_xss_protection": 0,
-        "csp": 0,
-        "subpage_count": 0,
-        "suspicious_subpages": 0,
-        "avg_subpage_risk": 0.0,
-        "has_sensitive_subpage": 0,
-        "subpage_keywords": {},
-        "subpage_details": []
-      },
-      "timestamp": "2025-08-26T15:54:26.004961"
-    }
-  },
-  {
-    "网址": "http://www.bxttbm365.com",
-    "风险等级": "低风险",
-    "风险评分": "0%",
-    "风险描述": "✅ 该网站相对安全\n• 子页面包含 13 个涉政相关关键词\n\n💡 建议：网站相对安全，但仍需保持警惕",
-    "检测时间": "2025-08-26 15:54:26",
-    "详细特征": {
-      "网址": "http://www.bxttbm365.com",
-      "域名长度": 17,
-      "子域名数量": 2,
-      "包含连字符": 0,
-      "包含数字": 1,
-      "可疑顶级域名": 0,
-      "数字比例": 0.17647058823529413,
-      "特殊字符比例": 0.12,
-      "辅音比例": 0.65,
-      "熵值（随机性）": 3.34,
-      "黑名单匹配": 0,
-      "品牌相似度": 0.12,
-      "疑似钓鱼": 0,
-      "同形异义攻击": 0,
-      "可疑关键词组合": 0,
-      "域名年龄（天）": 2712,
-      "新域名（30天内）": 0,
-      "极新域名（7天内）": 0,
-      "到期剩余天数": 574,
-      "短期注册": 0,
-      "可疑注册商": 0,
-      "内容长度": 154629,
-      "文本长度": 7090,
-      "图片数量": 4,
-      "链接数量": 18,
-      "表单数量": 0,
-      "外部链接数": 0,
-      "违规书籍关键词数量": 0,
-      "网站违禁词数量": 0,
-      "涉稳关键词数量": 0,
-      "涉黄关键词数量": 0,
-      "涉赌关键词数量": 0,
-      "涉政关键词数量": 1,
-      "涉枪暴关键词数量": 0,
-      "涉恐涉邪关键词数量": 0,
-      "涉黑灰产关键词数量": 0,
-      "涉电诈关键词数量": 0,
-      "违规化学品关键词数量": 0,
-      "敏感词总数": 1,
-      "敏感词占比": 0.0,
-      "有标题": 1,
-      "标题长度": 75,
-      "有描述": 1,
-      "有关键词": 1,
-      "有robots": 0,
-      "有登录表单": 0,
-      "有联系信息": 0,
-      "有隐私政策": 0,
-      "可疑图片": 0,
-      "脚本数量": 4,
-      "可疑脚本": 0,
-      "重定向次数": 1,
-      "最终网址": "https://www.bxttbm365.com/",
-      "域名变更": 0,
-      "有SSL证书": 1,
-      "SSL有效": 1,
-      "可信CA": 1,
-      "证书有效天数": 84,
-      "证书太新": 1,
-      "域名匹配": 0,
-      "通配符证书": 0,
-      "DNS解析成功": 1,
-      "IP数量": 2,
-      "首个IP": "172.67.188.141",
-      "IP黑名单": 0,
-      "有MX记录": 0,
-      "MX记录数": 0,
-      "有SPF记录": 0,
-      "响应时间": 0.19,
-      "HTTP状态码": 301,
-      "可访问": 1,
-      "服务器信息": "cloudflare",
-      "HSTS安全头": 0,
-      "X-Frame-Options": 0,
-      "X-Content-Type-Options": 0,
-      "X-XSS-Protection": 0,
-      "Content-Security-Policy": 0,
-      "检测子页面数量": 14,
-      "可疑子页面数": 0,
-      "子页面平均风险": 0.0,
-      "包含敏感子页面": 0,
-      "子页面中发现的关键词统计": {
-        "涉政": 13
-      },
-      "子页面详细信息": [
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf1_msshuangzu.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf6_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf1_msds.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/btc28_sf1_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf4_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf1_mssz.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf1_mssx.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf3_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/twbg28_sf1_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "https://www.bxttbm365.com/sitemap.xml",
-          "risk_score": 0,
-          "keyword_count": 0,
-          "has_login_form": 0,
-          "script_count": 0
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf1_msdx.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf7_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jnd28_sf5_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        },
-        {
-          "url": "http://www.bxttbm365.com/jndx28_sf1_mszh.html",
-          "risk_score": 0,
-          "keyword_count": 1,
-          "has_login_form": 0,
-          "script_count": 4
-        }
-      ]
-    },
-    "英文原文": {
-      "url": "http://www.bxttbm365.com",
-      "risk_level": "LOW",
-      "risk_score": 0,
-      "features": {
-        "url": "http://www.bxttbm365.com",
-        "domain_length": 17,
-        "subdomain_count": 2,
-        "has_hyphen": 0,
-        "has_digits": 1,
-        "suspicious_tld": 0,
-        "digit_ratio": 0.17647058823529413,
-        "special_char_ratio": 0.12,
-        "consonant_ratio": 0.65,
-        "entropy": 3.34,
-        "in_blacklist": 0,
-        "brand_similarity": 0.12,
-        "potential_phishing": 0,
-        "homograph_attack": 0,
-        "suspicious_combo": 0,
-        "domain_age_days": 2712,
-        "is_new_domain": 0,
-        "is_very_new_domain": 0,
-        "days_to_expire": 574,
-        "short_registration": 0,
-        "suspicious_registrar": 0,
-        "content_length": 154629,
-        "text_length": 7090,
-        "image_count": 4,
-        "link_count": 18,
-        "form_count": 0,
-        "external_links": 0,
-        "sensitive_违规书籍": 0,
-        "sensitive_网站违禁词": 0,
-        "sensitive_涉稳": 0,
-        "sensitive_涉黄": 0,
-        "sensitive_涉赌": 0,
-        "sensitive_涉政": 1,
-        "sensitive_涉枪暴": 0,
-        "sensitive_涉恐涉邪": 0,
-        "sensitive_涉黑灰产": 0,
-        "sensitive_涉电诈": 0,
-        "sensitive_违规化学品": 0,
-        "sensitive_keyword_count": 1,
-        "sensitive_keyword_ratio": 0.0,
-        "has_title": 1,
-        "title_length": 75,
-        "has_description": 1,
-        "has_keywords": 1,
-        "has_robots": 0,
-        "has_login_form": 0,
-        "has_contact_info": 0,
-        "has_privacy_policy": 0,
-        "suspicious_images": 0,
-        "script_count": 4,
-        "suspicious_scripts": 0,
-        "redirect_count": 1,
-        "final_url": "https://www.bxttbm365.com/",
-        "domain_changed": 0,
-        "has_ssl": 1,
-        "ssl_valid": 1,
-        "trusted_ca": 1,
-        "cert_valid_days": 84,
-        "cert_too_new": 1,
-        "ssl_domain_match": 0,
-        "wildcard_cert": 0,
-        "dns_resolved": 1,
-        "ip_count": 2,
-        "first_ip": "172.67.188.141",
-        "blacklisted_ip": 0,
-        "has_mx": 0,
-        "mx_count": 0,
-        "has_spf": 0,
-        "response_time": 0.19,
-        "http_status": 301,
-        "web_accessible": 1,
-        "server_header": "cloudflare",
-        "powered_by": "",
         "hsts": 0,
         "x_frame_options": 0,
         "x_content_type": 0,
         "x_xss_protection": 0,
         "csp": 0,
-        "subpage_count": 14,
-        "suspicious_subpages": 0,
-        "avg_subpage_risk": 0.0,
-        "has_sensitive_subpage": 0,
-        "subpage_keywords": {
-          "涉政": 13
-        },
-        "subpage_details": [
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf1_msshuangzu.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf6_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf1_msds.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/btc28_sf1_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf4_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf1_mssz.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf1_mssx.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf3_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/twbg28_sf1_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "https://www.bxttbm365.com/sitemap.xml",
-            "risk_score": 0,
-            "keyword_count": 0,
-            "has_login_form": 0,
-            "script_count": 0
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf1_msdx.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf7_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jnd28_sf5_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          },
-          {
-            "url": "http://www.bxttbm365.com/jndx28_sf1_mszh.html",
-            "risk_score": 0,
-            "keyword_count": 1,
-            "has_login_form": 0,
-            "script_count": 4
-          }
-        ]
-      },
-      "timestamp": "2025-08-26T15:54:26.216558"
-    }
-  },
-  {
-    "网址": "http://www.kelovp.tech",
-    "风险等级": "高风险",
-    "风险评分": "70%",
-    "风险描述": "🚨 该网站存在严重安全风险\n• SSL证书颁发机构不受信任\n• 子页面中发现高敏感内容\n• 发现 1 个可疑子页面\n• 子页面包含 3 个网站违禁词相关关键词\n• 子页面包含 2 个涉黄相关关键词\n• 子页面包含 2 个涉黑灰产相关关键词\n• 子页面包含 1 个涉电诈相关关键词\n\n💡 建议：请勿在此网站输入个人信息或进行任何交易",
-    "检测时间": "2025-08-26 15:54:29",
-    "详细特征": {
-      "网址": "http://www.kelovp.tech",
-      "域名长度": 15,
-      "子域名数量": 2,
-      "包含连字符": 0,
-      "包含数字": 0,
-      "可疑顶级域名": 0,
-      "数字比例": 0.0,
-      "特殊字符比例": 0.13,
-      "辅音比例": 0.67,
-      "熵值（随机性）": 3.32,
-      "黑名单匹配": 0,
-      "品牌相似度": 0.2,
-      "疑似钓鱼": 0,
-      "同形异义攻击": 0,
-      "可疑关键词组合": 0,
-      "域名年龄（天）": 1947,
-      "新域名（30天内）": 0,
-      "极新域名（7天内）": 0,
-      "到期剩余天数": 1705,
-      "短期注册": 0,
-      "可疑注册商": 0,
-      "内容长度": 34550,
-      "文本长度": 2317,
-      "图片数量": 0,
-      "链接数量": 36,
-      "表单数量": 1,
-      "外部链接数": 32,
-      "违规书籍关键词数量": 0,
-      "网站违禁词数量": 0,
-      "涉稳关键词数量": 0,
-      "涉黄关键词数量": 1,
-      "涉赌关键词数量": 0,
-      "涉政关键词数量": 0,
-      "涉枪暴关键词数量": 0,
-      "涉恐涉邪关键词数量": 0,
-      "涉黑灰产关键词数量": 1,
-      "涉电诈关键词数量": 0,
-      "违规化学品关键词数量": 0,
-      "敏感词总数": 2,
-      "敏感词占比": 0.02,
-      "有标题": 1,
-      "标题长度": 12,
-      "有描述": 1,
-      "有关键词": 0,
-      "有robots": 1,
-      "有登录表单": 0,
-      "有联系信息": 0,
-      "有隐私政策": 0,
-      "可疑图片": 0,
-      "脚本数量": 12,
-      "可疑脚本": 0,
-      "重定向次数": 2,
-      "最终网址": "https://kelovp.tech/",
-      "域名变更": 1,
-      "有SSL证书": 1,
-      "SSL有效": 1,
-      "可信CA": 0,
-      "证书有效天数": 149,
-      "证书太新": 0,
-      "域名匹配": 1,
-      "通配符证书": 0,
-      "DNS解析成功": 1,
-      "IP数量": 1,
-      "首个IP": "119.91.157.48",
-      "IP黑名单": 0,
-      "有MX记录": 0,
-      "MX记录数": 0,
-      "有SPF记录": 0,
-      "响应时间": 1.06,
-      "HTTP状态码": 301,
-      "可访问": 1,
-      "服务器信息": "Apache",
-      "HSTS安全头": 0,
-      "X-Frame-Options": 0,
-      "X-Content-Type-Options": 0,
-      "X-XSS-Protection": 0,
-      "Content-Security-Policy": 0,
-      "检测子页面数量": 1,
-      "可疑子页面数": 1,
-      "子页面平均风险": 80.0,
-      "包含敏感子页面": 1,
-      "子页面中发现的关键词统计": {
-        "网站违禁词": 3,
-        "涉黄": 2,
-        "涉黑灰产": 2,
-        "涉电诈": 1
-      },
-      "子页面详细信息": [
-        {
-          "url": "http://www.kelovp.tech/feed",
-          "risk_score": 80,
-          "keyword_count": 8,
-          "has_login_form": 0,
-          "script_count": 0
-        }
-      ]
-    },
-    "英文原文": {
-      "url": "http://www.kelovp.tech",
-      "risk_level": "HIGH",
-      "risk_score": 70,
-      "features": {
-        "url": "http://www.kelovp.tech",
-        "domain_length": 15,
-        "subdomain_count": 2,
-        "has_hyphen": 0,
-        "has_digits": 0,
-        "suspicious_tld": 0,
-        "digit_ratio": 0.0,
-        "special_char_ratio": 0.13,
-        "consonant_ratio": 0.67,
-        "entropy": 3.32,
-        "in_blacklist": 0,
-        "brand_similarity": 0.2,
-        "potential_phishing": 0,
-        "homograph_attack": 0,
-        "suspicious_combo": 0,
-        "domain_age_days": 1947,
-        "is_new_domain": 0,
-        "is_very_new_domain": 0,
-        "days_to_expire": 1705,
-        "short_registration": 0,
-        "suspicious_registrar": 0,
-        "content_length": 34550,
-        "text_length": 2317,
-        "image_count": 0,
-        "link_count": 36,
-        "form_count": 1,
-        "external_links": 32,
-        "sensitive_违规书籍": 0,
-        "sensitive_网站违禁词": 0,
-        "sensitive_涉稳": 0,
-        "sensitive_涉黄": 1,
-        "sensitive_涉赌": 0,
-        "sensitive_涉政": 0,
-        "sensitive_涉枪暴": 0,
-        "sensitive_涉恐涉邪": 0,
-        "sensitive_涉黑灰产": 1,
-        "sensitive_涉电诈": 0,
-        "sensitive_违规化学品": 0,
-        "sensitive_keyword_count": 2,
-        "sensitive_keyword_ratio": 0.02,
-        "has_title": 1,
-        "title_length": 12,
-        "has_description": 1,
-        "has_keywords": 0,
-        "has_robots": 1,
-        "has_login_form": 0,
-        "has_contact_info": 0,
-        "has_privacy_policy": 0,
-        "suspicious_images": 0,
-        "script_count": 12,
-        "suspicious_scripts": 0,
-        "redirect_count": 2,
-        "final_url": "https://kelovp.tech/",
-        "domain_changed": 1,
-        "has_ssl": 1,
-        "ssl_valid": 1,
-        "trusted_ca": 0,
-        "cert_valid_days": 149,
-        "cert_too_new": 0,
-        "ssl_domain_match": 1,
-        "wildcard_cert": 0,
-        "dns_resolved": 1,
-        "ip_count": 1,
-        "first_ip": "119.91.157.48",
-        "blacklisted_ip": 0,
-        "has_mx": 0,
-        "mx_count": 0,
-        "has_spf": 0,
-        "response_time": 1.06,
-        "http_status": 301,
-        "web_accessible": 1,
-        "server_header": "Apache",
-        "powered_by": "",
-        "hsts": 0,
-        "x_frame_options": 0,
-        "x_content_type": 0,
-        "x_xss_protection": 0,
-        "csp": 0,
-        "subpage_count": 1,
-        "suspicious_subpages": 1,
-        "avg_subpage_risk": 80.0,
+        "subpage_count": 50,
+        "suspicious_subpages": 50,
+        "avg_subpage_risk": 100.0,
         "has_sensitive_subpage": 1,
         "subpage_keywords": {
-          "网站违禁词": 3,
-          "涉黄": 2,
-          "涉黑灰产": 2,
-          "涉电诈": 1
+          "网站违禁词": 1091,
+          "涉黄": 259,
+          "涉赌": 50,
+          "涉政": 52,
+          "涉枪暴": 2,
+          "涉电诈": 4
         },
         "subpage_details": [
           {
-            "url": "http://www.kelovp.tech/feed",
-            "risk_score": 80,
-            "keyword_count": 8,
+            "url": "http://www.zymrs.com/news/555f599439.html",
+            "risk_score": 100,
+            "keyword_count": 26,
             "has_login_form": 0,
-            "script_count": 0
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/422b599572.html",
+            "risk_score": 100,
+            "keyword_count": 28,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/521a599473.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/cmjq/",
+            "risk_score": 100,
+            "keyword_count": 27,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/html/555f599439.html",
+            "risk_score": 100,
+            "keyword_count": 27,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/75e599919.html",
+            "risk_score": 100,
+            "keyword_count": 31,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/504e599490.html",
+            "risk_score": 100,
+            "keyword_count": 23,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/77c599917.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/573d599421.html",
+            "risk_score": 100,
+            "keyword_count": 33,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/gczp/",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/news/98d599896.html",
+            "risk_score": 100,
+            "keyword_count": 34,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/503b599491.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/28.html",
+            "risk_score": 100,
+            "keyword_count": 26,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/31.html",
+            "risk_score": 100,
+            "keyword_count": 34,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/572f599422.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/489f599505.html",
+            "risk_score": 100,
+            "keyword_count": 31,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/56e599938.html",
+            "risk_score": 100,
+            "keyword_count": 33,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/thyp/",
+            "risk_score": 100,
+            "keyword_count": 34,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/",
+            "risk_score": 100,
+            "keyword_count": 29,
+            "has_login_form": 0,
+            "script_count": 17
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/25.html",
+            "risk_score": 100,
+            "keyword_count": 30,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/585c599409.html",
+            "risk_score": 100,
+            "keyword_count": 35,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/zbyh/",
+            "risk_score": 100,
+            "keyword_count": 34,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/news/1b599993.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/26.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/95d599899.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/526c599468.html",
+            "risk_score": 100,
+            "keyword_count": 28,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/30.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/44b599950.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/514c599480.html",
+            "risk_score": 100,
+            "keyword_count": 23,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/491b599503.html",
+            "risk_score": 100,
+            "keyword_count": 27,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/55c599939.html",
+            "risk_score": 100,
+            "keyword_count": 28,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/wpcg/",
+            "risk_score": 100,
+            "keyword_count": 33,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/html/420f599574.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/488a599506.html",
+            "risk_score": 100,
+            "keyword_count": 25,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/579f599415.html",
+            "risk_score": 100,
+            "keyword_count": 31,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/27.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/427d599567.html",
+            "risk_score": 100,
+            "keyword_count": 30,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/577d599417.html",
+            "risk_score": 100,
+            "keyword_count": 24,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/70b599924.html",
+            "risk_score": 100,
+            "keyword_count": 33,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/419e599575.html",
+            "risk_score": 100,
+            "keyword_count": 24,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/29.html",
+            "risk_score": 100,
+            "keyword_count": 31,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/tptk/",
+            "risk_score": 100,
+            "keyword_count": 29,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/dydp/",
+            "risk_score": 100,
+            "keyword_count": 37,
+            "has_login_form": 0,
+            "script_count": 13
+          },
+          {
+            "url": "http://www.zymrs.com/index.php/vodtype/24.html",
+            "risk_score": 100,
+            "keyword_count": 31,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/549e599445.html",
+            "risk_score": 100,
+            "keyword_count": 23,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/84c599910.html",
+            "risk_score": 100,
+            "keyword_count": 28,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/479f599515.html",
+            "risk_score": 100,
+            "keyword_count": 23,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/news/594d599400.html",
+            "risk_score": 100,
+            "keyword_count": 26,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/html/540f599454.html",
+            "risk_score": 100,
+            "keyword_count": 32,
+            "has_login_form": 0,
+            "script_count": 14
+          },
+          {
+            "url": "http://www.zymrs.com/baike/",
+            "risk_score": 100,
+            "keyword_count": 28,
+            "has_login_form": 0,
+            "script_count": 13
           }
         ]
       },
-      "timestamp": "2025-08-26T15:54:29.493023"
-    }
-  },
-  {
-    "网址": "http://www.ltgygs.com",
-    "风险等级": "低风险",
-    "风险评分": "23%",
-    "风险描述": "✅ 该网站相对安全\n• 子页面中发现高敏感内容\n• 发现 1 个可疑子页面\n• 子页面包含 90 个网站违禁词相关关键词\n• 子页面包含 48 个涉黄相关关键词\n• 子页面包含 3 个涉黑灰产相关关键词\n• 子页面包含 1 个涉政相关关键词\n• 子页面包含 1 个涉电诈相关关键词\n\n💡 建议：网站相对安全，但仍需保持警惕",
-    "检测时间": "2025-08-26 15:54:59",
-    "详细特征": {
-      "网址": "http://www.ltgygs.com",
-      "域名长度": 14,
-      "子域名数量": 2,
-      "包含连字符": 0,
-      "包含数字": 0,
-      "可疑顶级域名": 0,
-      "数字比例": 0.0,
-      "特殊字符比例": 0.14,
-      "辅音比例": 0.79,
-      "熵值（随机性）": 3.18,
-      "黑名单匹配": 0,
-      "品牌相似度": 0.21,
-      "疑似钓鱼": 0,
-      "同形异义攻击": 0,
-      "可疑关键词组合": 0,
-      "域名年龄（天）": 2499,
-      "新域名（30天内）": 0,
-      "极新域名（7天内）": 0,
-      "到期剩余天数": 422,
-      "短期注册": 0,
-      "可疑注册商": 0,
-      "内容长度": 66299,
-      "文本长度": 4296,
-      "图片数量": 34,
-      "链接数量": 139,
-      "表单数量": 21,
-      "外部链接数": 2,
-      "违规书籍关键词数量": 0,
-      "网站违禁词数量": 2,
-      "涉稳关键词数量": 0,
-      "涉黄关键词数量": 1,
-      "涉赌关键词数量": 0,
-      "涉政关键词数量": 0,
-      "涉枪暴关键词数量": 0,
-      "涉恐涉邪关键词数量": 0,
-      "涉黑灰产关键词数量": 1,
-      "涉电诈关键词数量": 0,
-      "违规化学品关键词数量": 0,
-      "敏感词总数": 4,
-      "敏感词占比": 0.02,
-      "有标题": 1,
-      "标题长度": 106,
-      "有描述": 1,
-      "有关键词": 1,
-      "有robots": 0,
-      "有登录表单": 0,
-      "有联系信息": 1,
-      "有隐私政策": 0,
-      "可疑图片": 0,
-      "脚本数量": 3,
-      "可疑脚本": 0,
-      "重定向次数": 0,
-      "最终网址": "http://www.ltgygs.com",
-      "域名变更": 0,
-      "有SSL证书": 1,
-      "SSL有效": 1,
-      "可信CA": 1,
-      "证书有效天数": 87,
-      "证书太新": 1,
-      "域名匹配": 0,
-      "通配符证书": 1,
-      "DNS解析成功": 1,
-      "IP数量": 1,
-      "首个IP": "154.219.46.240",
-      "IP黑名单": 0,
-      "有MX记录": 0,
-      "MX记录数": 0,
-      "有SPF记录": 0,
-      "响应时间": 0.51,
-      "HTTP状态码": 200,
-      "可访问": 1,
-      "服务器信息": "nginx/1.22.0",
-      "HSTS安全头": 1,
-      "X-Frame-Options": 0,
-      "X-Content-Type-Options": 0,
-      "X-XSS-Protection": 0,
-      "Content-Security-Policy": 0,
-      "检测子页面数量": 47,
-      "可疑子页面数": 1,
-      "子页面平均风险": 49.57446808510638,
-      "包含敏感子页面": 1,
-      "子页面中发现的关键词统计": {
-        "网站违禁词": 90,
-        "涉黄": 48,
-        "涉黑灰产": 3,
-        "涉政": 1,
-        "涉电诈": 1
-      },
-      "子页面详细信息": [
-        {
-          "url": "http://www.ltgygs.com/industry/74.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product4/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/59.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product3/87.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/72.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/78.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/liuyan/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/honor/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product7/103.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/61.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "https://www.ltgygs.com/",
-          "risk_score": 50,
-          "keyword_count": 4,
-          "has_login_form": 0,
-          "script_count": 3
-        },
-        {
-          "url": "http://www.ltgygs.com/contact/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 3
-        },
-        {
-          "url": "http://www.ltgygs.com/product3/86.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/71.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/wenhua/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/news/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product2/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/guanyu/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product5/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product2/89.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "https://www.ltgygs.com/sitemap.xml",
-          "risk_score": 80,
-          "keyword_count": 7,
-          "has_login_form": 0,
-          "script_count": 0
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/65.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/case/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product5/100.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/67.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/62.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/73.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product7/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/66.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/shipin/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/industry/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/75.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/77.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product2/93.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product6/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/70.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product3/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/64.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/76.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/jieshao/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/68.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/company/",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/common/69.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        },
-        {
-          "url": "http://www.ltgygs.com/product4/84.html",
-          "risk_score": 50,
-          "keyword_count": 3,
-          "has_login_form": 0,
-          "script_count": 2
-        }
-      ]
-    },
-    "英文原文": {
-      "url": "http://www.ltgygs.com",
-      "risk_level": "LOW",
-      "risk_score": 23,
-      "features": {
-        "url": "http://www.ltgygs.com",
-        "domain_length": 14,
-        "subdomain_count": 2,
-        "has_hyphen": 0,
-        "has_digits": 0,
-        "suspicious_tld": 0,
-        "digit_ratio": 0.0,
-        "special_char_ratio": 0.14,
-        "consonant_ratio": 0.79,
-        "entropy": 3.18,
-        "in_blacklist": 0,
-        "brand_similarity": 0.21,
-        "potential_phishing": 0,
-        "homograph_attack": 0,
-        "suspicious_combo": 0,
-        "domain_age_days": 2499,
-        "is_new_domain": 0,
-        "is_very_new_domain": 0,
-        "days_to_expire": 422,
-        "short_registration": 0,
-        "suspicious_registrar": 0,
-        "content_length": 66299,
-        "text_length": 4296,
-        "image_count": 34,
-        "link_count": 139,
-        "form_count": 21,
-        "external_links": 2,
-        "sensitive_违规书籍": 0,
-        "sensitive_网站违禁词": 2,
-        "sensitive_涉稳": 0,
-        "sensitive_涉黄": 1,
-        "sensitive_涉赌": 0,
-        "sensitive_涉政": 0,
-        "sensitive_涉枪暴": 0,
-        "sensitive_涉恐涉邪": 0,
-        "sensitive_涉黑灰产": 1,
-        "sensitive_涉电诈": 0,
-        "sensitive_违规化学品": 0,
-        "sensitive_keyword_count": 4,
-        "sensitive_keyword_ratio": 0.02,
-        "has_title": 1,
-        "title_length": 106,
-        "has_description": 1,
-        "has_keywords": 1,
-        "has_robots": 0,
-        "has_login_form": 0,
-        "has_contact_info": 1,
-        "has_privacy_policy": 0,
-        "suspicious_images": 0,
-        "script_count": 3,
-        "suspicious_scripts": 0,
-        "redirect_count": 0,
-        "final_url": "http://www.ltgygs.com",
-        "domain_changed": 0,
-        "has_ssl": 1,
-        "ssl_valid": 1,
-        "trusted_ca": 1,
-        "cert_valid_days": 87,
-        "cert_too_new": 1,
-        "ssl_domain_match": 0,
-        "wildcard_cert": 1,
-        "dns_resolved": 1,
-        "ip_count": 1,
-        "first_ip": "154.219.46.240",
-        "blacklisted_ip": 0,
-        "has_mx": 0,
-        "mx_count": 0,
-        "has_spf": 0,
-        "response_time": 0.51,
-        "http_status": 200,
-        "web_accessible": 1,
-        "server_header": "nginx/1.22.0",
-        "powered_by": "",
-        "hsts": 1,
-        "x_frame_options": 0,
-        "x_content_type": 0,
-        "x_xss_protection": 0,
-        "csp": 0,
-        "subpage_count": 47,
-        "suspicious_subpages": 1,
-        "avg_subpage_risk": 49.57446808510638,
-        "has_sensitive_subpage": 1,
-        "subpage_keywords": {
-          "网站违禁词": 90,
-          "涉黄": 48,
-          "涉黑灰产": 3,
-          "涉政": 1,
-          "涉电诈": 1
-        },
-        "subpage_details": [
-          {
-            "url": "http://www.ltgygs.com/industry/74.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product4/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/59.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product3/87.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/72.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/78.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/liuyan/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/honor/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product7/103.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/61.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "https://www.ltgygs.com/",
-            "risk_score": 50,
-            "keyword_count": 4,
-            "has_login_form": 0,
-            "script_count": 3
-          },
-          {
-            "url": "http://www.ltgygs.com/contact/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 3
-          },
-          {
-            "url": "http://www.ltgygs.com/product3/86.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/71.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/wenhua/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/news/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product2/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/guanyu/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product5/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product2/89.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "https://www.ltgygs.com/sitemap.xml",
-            "risk_score": 80,
-            "keyword_count": 7,
-            "has_login_form": 0,
-            "script_count": 0
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/65.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/case/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product5/100.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/67.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/62.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/73.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product7/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/66.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/shipin/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/industry/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/75.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/77.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product2/93.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product6/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/70.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product3/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/64.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/76.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/jieshao/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/68.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/company/",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/common/69.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          },
-          {
-            "url": "http://www.ltgygs.com/product4/84.html",
-            "risk_score": 50,
-            "keyword_count": 3,
-            "has_login_form": 0,
-            "script_count": 2
-          }
-        ]
-      },
-      "timestamp": "2025-08-26T15:54:59.681493"
+      "timestamp": "2025-08-26T15:57:13.830082"
     }
   }
 ]
