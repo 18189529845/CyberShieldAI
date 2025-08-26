@@ -69,7 +69,7 @@ The system supports obtaining URL and keyword information from MySQL database. T
 ```python
 # Database configuration example
 DB_CONFIG = {
-    'host': '192.168.2.41',  # Database host address
+    'host': '127.0.0.1',  # Database host address
     'port': 3306,
     'user': 'root',       # Database username
     'password': 'your_password',  # Database password

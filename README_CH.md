@@ -69,7 +69,7 @@ conda install --file requirements.txt
 ```python
 # 数据库配置示例
 DB_CONFIG = {
-    'host': '192.168.2.41',  # 数据库主机地址
+    'host': '127.0.0.1',  # 数据库主机地址
     'port': 3306,
     'user': 'root',       # 数据库用户名
     'password': 'your_password',  # 数据库密码
