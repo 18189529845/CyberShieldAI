@@ -156,6 +156,7 @@ def batch_detect_websites():
                 "risk_score": "25%",
                 "risk_description": "...",
                 "detection_time": "2023-07-01 12:00:00",
+                "features": {},
                 "saved_to_db": true
             },
             ...
@@ -181,46 +182,69 @@ def batch_detect_websites():
         
         for url in urls:
             try:
+                # 标准化URL
+                if url and not url.startswith(('http://', 'https://')):
+                    url = 'http://' + url
+                
                 # 使用detect_single方法检测单个网站
                 result = batch_detector.detect_single(url)
                 full_results_for_db.append(result)  # 保存完整结果用于数据库
                 
-                # 简化返回结果
+                # 构建返回结果，包含更多详细信息
                 simplified_result = {
                     'url': result['网址'],
                     'risk_level': result['风险等级'],
                     'risk_score': result['风险评分'],
                     'risk_description': result['风险描述'],
                     'detection_time': result['检测时间'],
-                    'saved_to_db': save_to_db  # 默认标记为已保存
+                    'features': result.get('详细特征', {}),  # 包含详细特征信息
+                    'saved_to_db': save_to_db,  # 默认标记为已保存
+                    '英文原文': {
+                        'url': url,
+                        'risk_level': result['风险等级'],
+                        'risk_score': result['风险评分'],
+                        'features': result.get('详细特征', {}),
+                        'timestamp': datetime.datetime.now().isoformat()
+                    }
                 }
                 results.append(simplified_result)
             except Exception as e:
                 logger.error(f"网站检测失败: {url}, 错误: {str(e)}")
                 results.append({
                     'url': url,
-                    'risk_level': '检测失败',
-                    'risk_score': '0%',
-                    'risk_description': f'检测失败: {str(e)}',
+                    '风险等级': '检测失败',
+                    '风险评分': '0%',
+                    '风险描述': f'检测失败: {str(e)}',
                     'detection_time': datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    'features': {},
                     'saved_to_db': False  # 检测失败的网站不会保存到数据库
                 })
         
         # 批量保存结果到数据库
+        saved_successfully = False
         if save_to_db and full_results_for_db:
             try:
                 save_results_to_database(full_results_for_db)
+                saved_successfully = True
                 logger.info(f"批量检测结果已保存到数据库，共{len(full_results_for_db)}条记录")
             except Exception as db_err:
                 logger.error(f"批量保存检测结果到数据库失败: {str(db_err)}")
-                # 更新返回结果中的保存状态
-                for result in results:
-                    result['saved_to_db'] = False
+        
+        # 更新返回结果中的保存状态
+        for result in results:
+            if result['risk_level'] != '检测失败':
+                result['saved_to_db'] = saved_successfully
         
         return jsonify({
             'code': 200,
             'message': 'success',
-            'data': results
+            'data': results,
+            'summary': {
+                'total_urls': len(urls),
+                'success_count': len([r for r in results if r['risk_level'] != '检测失败']),
+                'failed_count': len([r for r in results if r['risk_level'] == '检测失败']),
+                'saved_to_db': saved_successfully
+            }
         })
         
     except Exception as e:
