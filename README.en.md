@@ -196,6 +196,152 @@ After detection is completed, three files will be generated:
 }
 ```
 
+## 🌐 API Interface Usage
+
+CyberShield AI provides REST API interfaces based on Flask, facilitating integration with other systems and automated calling.
+
+### 1. Starting the API Service
+
+```bash
+# Run in the project root directory
+python website_detector_api.py
+```
+
+Once started, the service listens on all network interfaces at port 8000 by default (`http://0.0.0.0:8000`).
+
+### 2. API Interface List
+
+#### Health Check Interface
+- **URL**: `/api/health`
+- **Method**: GET
+- **Description**: Check if the API service is running normally
+- **Response**: 
+  ```json
+  {
+    "status": "healthy",
+    "version": "1.4.0",
+    "timestamp": "2023-xx-xx xx:xx:xx"
+  }
+  ```
+
+#### Single Website Detection Interface
+- **URL**: `/api/detect`
+- **Method**: POST
+- **Description**: Detect the risk level and detailed information of a single website
+- **Request Parameters**: 
+  - `url`: Website to be detected (required)
+  - `save_to_db`: Whether to save results to database (optional, default: true)
+- **Request Example**: 
+  ```json
+  {
+    "url": "https://example.com",
+    "save_to_db": true
+  }
+  ```
+- **Response Example**: 
+  ```json
+  {
+    "success": true,
+    "data": {
+      "url": "https://example.com",
+      "risk_level": "Low Risk",
+      "risk_score": 15,
+      "risk_description": "This website has low risk, normal content, and stable network connection.",
+      "detection_time": "2023-xx-xx xx:xx:xx",
+      "features": {
+        "domain_length": 11,
+        "has_ssl": true,
+        "ssl_valid": true,
+        "web_accessible": true,
+        "sensitive_keyword_count": 0,
+        "...": "More feature information"
+      }
+    },
+    "saved_to_db": true
+  }
+  ```
+
+#### Batch Website Detection Interface
+- **URL**: `/api/batch_detect`
+- **Method**: POST
+- **Description**: Batch detect risk levels of multiple websites
+- **Request Parameters**: 
+  - `urls`: List of websites to be detected (required)
+  - `save_to_db`: Whether to save results to database (optional, default: true)
+- **Request Example**: 
+  ```json
+  {
+    "urls": ["https://example.com", "http://test.com"],
+    "save_to_db": true
+  }
+  ```
+- **Response Example**: 
+  ```json
+  {
+    "success": true,
+    "results": [
+      {
+        "url": "https://example.com",
+        "risk_level": "Low Risk",
+        "risk_score": 15,
+        "risk_description": "This website has low risk, normal content, and stable network connection."
+      },
+      {
+        "url": "http://test.com",
+        "risk_level": "Medium Risk",
+        "risk_score": 52,
+        "risk_description": "This website has some suspicious features and requires further verification."
+      }
+    ],
+    "saved_to_db": true
+  }
+  ```
+
+### 3. Calling Examples
+
+#### Using curl to Call the API
+
+```bash
+# Check service health status
+curl http://localhost:8000/api/health
+
+# Detect a single website
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://example.com"}' http://localhost:8000/api/detect
+
+# Batch detect websites
+curl -X POST -H "Content-Type: application/json" -d '{"urls":["https://example.com","http://test.com"]}' http://localhost:8000/api/batch_detect
+```
+
+#### Using Python to Call the API
+
+```python
+import requests
+import json
+
+# Check service health status
+response = requests.get('http://localhost:8000/api/health')
+print(response.json())
+
+# Detect a single website
+data = {'url': 'https://example.com', 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/detect', json=data)
+print(response.json())
+
+# Batch detect websites
+data = {'urls': ['https://example.com', 'http://test.com'], 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/batch_detect', json=data)
+print(response.json())
+```
+
+### 4. Notes
+
+1. **Request Limitations**: To avoid excessive system load, it's recommended that the number of URLs per batch detection does not exceed 100
+2. **Timeout Settings**: The default timeout for API requests is 30 seconds. Complex detection may require more time
+3. **Concurrency Control**: The system automatically performs concurrency control internally; no additional handling is needed at the API call layer
+4. **Error Handling**: In case of errors, the API will return a JSON response containing error information. Please check if the request parameters are correct
+5. **Database Dependencies**: If database functionality is not required, ensure the `save_to_db` parameter is set to `false`
+
+
 ## 🔧 Advanced Configuration
 
 ### 1. Custom Sensitive Keywords

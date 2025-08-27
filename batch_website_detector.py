@@ -41,10 +41,10 @@ def load_config(config_path='config.json'):
     """加载配置文件"""
     default_config = {
         'db_config': {
-            'host': '127.0.0.1',  # 数据库主机地址
+            'host': '192.168.2.41',  # 数据库主机地址
             'port': 3306,
             'user': 'root',       # 数据库用户名
-            'password': 'root',  # 数据库密码
+            'password': 'df!2020?OK',  # 数据库密码
             'db': 'ntmv3',  # 数据库名称
             'charset': 'utf8mb4'
         },

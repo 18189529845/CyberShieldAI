@@ -9,3 +9,4 @@ urllib3>=1.26.5
 lxml>=4.6.3
 colorama>=0.4.4
 tqdm>=4.61.0
+flask>=2.0.0

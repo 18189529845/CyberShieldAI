@@ -189,6 +189,152 @@ options:
 | **中风险** | 40-69% | 中风险，需进一步核实 |
 | **低风险** | 0-39% | 低风险，相对安全 |
 
+## 🌐 API接口使用
+
+CyberShield_AI 提供了基于Flask的REST API接口，方便与其他系统集成和自动化调用。
+
+### 1. 启动API服务
+
+```bash
+# 在项目根目录下运行
+python website_detector_api.py
+```
+
+服务启动后，默认监听在所有网络接口的8000端口（`http://0.0.0.0:8000`）。
+
+### 2. API接口列表
+
+#### 健康检查接口
+- **URL**: `/api/health`
+- **方法**: GET
+- **描述**: 检查API服务是否正常运行
+- **响应**: 
+  ```json
+  {
+    "status": "healthy",
+    "version": "1.4.0",
+    "timestamp": "2023-xx-xx xx:xx:xx"
+  }
+  ```
+
+#### 单个网站检测接口
+- **URL**: `/api/detect`
+- **方法**: POST
+- **描述**: 检测单个网站的风险等级和详细信息
+- **请求参数**: 
+  - `url`: 待检测的网址（必填）
+  - `save_to_db`: 是否保存结果到数据库（可选，默认：true）
+- **请求示例**: 
+  ```json
+  {
+    "url": "https://example.com",
+    "save_to_db": true
+  }
+  ```
+- **响应示例**: 
+  ```json
+  {
+    "success": true,
+    "data": {
+      "url": "https://example.com",
+      "risk_level": "低风险",
+      "risk_score": 15,
+      "risk_description": "该网站风险较低，内容正常，网络连接稳定。",
+      "detection_time": "2023-xx-xx xx:xx:xx",
+      "features": {
+        "domain_length": 11,
+        "has_ssl": true,
+        "ssl_valid": true,
+        "web_accessible": true,
+        "sensitive_keyword_count": 0,
+        "...": "更多特征信息"
+      }
+    },
+    "saved_to_db": true
+  }
+  ```
+
+#### 批量网站检测接口
+- **URL**: `/api/batch_detect`
+- **方法**: POST
+- **描述**: 批量检测多个网站的风险等级
+- **请求参数**: 
+  - `urls`: 待检测的网址列表（必填）
+  - `save_to_db`: 是否保存结果到数据库（可选，默认：true）
+- **请求示例**: 
+  ```json
+  {
+    "urls": ["https://example.com", "http://test.com"],
+    "save_to_db": true
+  }
+  ```
+- **响应示例**: 
+  ```json
+  {
+    "success": true,
+    "results": [
+      {
+        "url": "https://example.com",
+        "risk_level": "低风险",
+        "risk_score": 15,
+        "risk_description": "该网站风险较低，内容正常，网络连接稳定。"
+      },
+      {
+        "url": "http://test.com",
+        "risk_level": "中风险",
+        "risk_score": 52,
+        "risk_description": "该网站存在一些可疑特征，建议进一步核实。"
+      }
+    ],
+    "saved_to_db": true
+  }
+  ```
+
+### 3. 调用示例
+
+#### 使用curl调用API
+
+```bash
+# 检查服务健康状态
+curl http://localhost:8000/api/health
+
+# 检测单个网站
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://example.com"}' http://localhost:8000/api/detect
+
+# 批量检测网站
+curl -X POST -H "Content-Type: application/json" -d '{"urls":["https://example.com","http://test.com"]}' http://localhost:8000/api/batch_detect
+```
+
+#### 使用Python调用API
+
+```python
+import requests
+import json
+
+# 检查服务健康状态
+response = requests.get('http://localhost:8000/api/health')
+print(response.json())
+
+# 检测单个网站
+data = {'url': 'https://example.com', 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/detect', json=data)
+print(response.json())
+
+# 批量检测网站
+data = {'urls': ['https://example.com', 'http://test.com'], 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/batch_detect', json=data)
+print(response.json())
+```
+
+### 4. 注意事项
+
+1. **请求限制**: 为避免系统负载过高，建议批量检测时单次URL数量不超过100个
+2. **超时设置**: API请求默认超时时间为30秒，复杂检测可能需要更长时间
+3. **并发控制**: 系统内部会自动进行并发控制，无需在API调用层额外处理
+4. **错误处理**: 如遇错误，API会返回包含错误信息的JSON响应，请检查请求参数是否正确
+5. **数据库依赖**: 如不需要数据库功能，请确保`save_to_db`参数设置为`false`
+
+
 ## 🔧 高级配置
 
 ### 1. 自定义敏感关键词
@@ -354,6 +500,106 @@ A: 使用Ctrl+C组合键优雅退出定时任务
 - v1.2.0 - 优化并发性能和报告生成
 - v1.3.0 - 新增子页面深度检测功能
 - v1.4.0 - 增加数据库集成和定时任务功能
+
+## 数据库字段名及中文注释分类
+
+## 1. 基本检测信息
+- id - 主键ID
+- url - 检测的网址
+- risk_level - 风险等级(低风险/中风险/高风险)
+- risk_score - 风险评分(0-100)
+- risk_description - 风险描述信息
+- detection_time - 检测时间
+- create_time - 创建时间
+- update_time - 更新时间
+## 2. 域名特征
+- domain_length - 域名长度
+- subdomain_count - 子域名数量
+- has_hyphen - 是否包含连字符
+- has_digits - 是否包含数字
+- suspicious_tld - 是否为可疑顶级域名
+- digit_ratio - 数字比例
+- special_char_ratio - 特殊字符比例
+- consonant_ratio - 辅音比例
+- entropy - 熵值(随机性)
+- in_blacklist - 是否在黑名单中
+- brand_similarity - 品牌相似度
+- potential_phishing - 是否疑似钓鱼
+- homograph_attack - 是否存在同形异义攻击
+- suspicious_combo - 可疑关键词组合数
+- domain_age_days - 域名年龄(天)
+- is_new_domain - 是否为新域名(30天内)
+- is_very_new_domain - 是否为极新域名(7天内)
+- days_to_expire - 到期剩余天数
+- short_registration - 是否为短期注册(少于1年)
+- suspicious_registrar - 是否为可疑注册商
+## 3. 内容分析
+- content_length - 内容长度
+- text_length - 文本长度
+- image_count - 图片数量
+- link_count - 链接数量
+- form_count - 表单数量
+- external_links - 外部链接数
+- sensitive_keyword_count - 敏感词总数
+- sensitive_keyword_ratio - 敏感词占比
+- has_title - 是否有标题
+- title_length - 标题长度
+- has_description - 是否有描述
+- has_keywords - 是否有关键词
+- has_robots - 是否有robots.txt
+- has_login_form - 是否有登录表单
+- has_contact_info - 是否有联系信息
+- has_privacy_policy - 是否有隐私政策
+- suspicious_images - 是否有可疑图片
+- script_count - 脚本数量
+- suspicious_scripts - 是否有可疑脚本
+- sensitive_违规书籍 - 违规书籍关键词数量
+- sensitive_网站违禁词 - 网站违禁词数量
+- sensitive_涉稳 - 涉稳关键词数量
+- sensitive_涉黄 - 涉黄关键词数量
+- sensitive_涉赌 - 涉赌关键词数量
+- sensitive_涉政 - 涉政关键词数量
+- sensitive_涉枪暴 - 涉枪暴关键词数量
+- sensitive_涉恐涉邪 - 涉恐涉邪关键词数量
+- sensitive_涉黑灰产 - 涉黑灰产关键词数量
+- sensitive_涉电诈 - 涉电诈关键词数量
+- sensitive_违规化学品 - 违规化学品关键词数量
+## 4. 网络特征
+- redirect_count - 重定向次数
+- final_url - 最终重定向后的网址
+- domain_changed - 是否发生域名变更
+- has_ssl - 是否有SSL证书
+- ssl_valid - SSL证书是否有效
+- trusted_ca - 是否为可信CA颁发
+- cert_valid_days - 证书有效天数
+- cert_too_new - 证书是否太新
+- ssl_domain_match - 域名是否匹配
+- wildcard_cert - 是否为通配符证书
+- dns_resolved - DNS是否解析成功
+- ip_count - IP数量
+- first_ip - 首个IP地址
+- blacklisted_ip - IP是否在黑名单中
+- has_mx - 是否有MX记录
+- mx_count - MX记录数量
+- has_spf - 是否有SPF记录
+- response_time - 响应时间(秒)
+- http_status - HTTP状态码
+- web_accessible - 网站是否可访问
+- server_header - 服务器信息
+## 5. 行为模式
+- hsts - 是否启用HSTS安全头
+- x_frame_options - 是否设置X-Frame-Options
+- x_content_type - 是否设置X-Content-Type-Options
+- x_xss_protection - 是否设置X-XSS-Protection
+- csp - 是否设置Content-Security-Policy
+## 6. 子页面特征
+- subpage_count - 检测子页面数量
+- suspicious_subpages - 可疑子页面数
+- avg_subpage_risk - 子页面平均风险
+- has_sensitive_subpage - 是否包含敏感子页面
+- subpage_keywords - 子页面关键词统计(JSON格式)
+- subpage_details - 子页面详细信息(JSON格式)
+
 
 ## 📄 许可证
 

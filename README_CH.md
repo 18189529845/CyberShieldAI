@@ -196,6 +196,152 @@ options:
 }
 ```
 
+
+## 🌐 API接口使用
+
+CyberShield_AI 提供了基于Flask的REST API接口，方便与其他系统集成和自动化调用。
+
+### 1. 启动API服务
+
+```bash
+# 在项目根目录下运行
+python website_detector_api.py
+```
+
+服务启动后，默认监听在所有网络接口的8000端口（`http://0.0.0.0:8000`）。
+
+### 2. API接口列表
+
+#### 健康检查接口
+- **URL**: `/api/health`
+- **方法**: GET
+- **描述**: 检查API服务是否正常运行
+- **响应**: 
+  ```json
+  {
+    "status": "healthy",
+    "version": "1.4.0",
+    "timestamp": "2023-xx-xx xx:xx:xx"
+  }
+  ```
+
+#### 单个网站检测接口
+- **URL**: `/api/detect`
+- **方法**: POST
+- **描述**: 检测单个网站的风险等级和详细信息
+- **请求参数**: 
+  - `url`: 待检测的网址（必填）
+  - `save_to_db`: 是否保存结果到数据库（可选，默认：true）
+- **请求示例**: 
+  ```json
+  {
+    "url": "https://example.com",
+    "save_to_db": true
+  }
+  ```
+- **响应示例**: 
+  ```json
+  {
+    "success": true,
+    "data": {
+      "url": "https://example.com",
+      "risk_level": "低风险",
+      "risk_score": 15,
+      "risk_description": "该网站风险较低，内容正常，网络连接稳定。",
+      "detection_time": "2023-xx-xx xx:xx:xx",
+      "features": {
+        "domain_length": 11,
+        "has_ssl": true,
+        "ssl_valid": true,
+        "web_accessible": true,
+        "sensitive_keyword_count": 0,
+        "...": "更多特征信息"
+      }
+    },
+    "saved_to_db": true
+  }
+  ```
+
+#### 批量网站检测接口
+- **URL**: `/api/batch_detect`
+- **方法**: POST
+- **描述**: 批量检测多个网站的风险等级
+- **请求参数**: 
+  - `urls`: 待检测的网址列表（必填）
+  - `save_to_db`: 是否保存结果到数据库（可选，默认：true）
+- **请求示例**: 
+  ```json
+  {
+    "urls": ["https://example.com", "http://test.com"],
+    "save_to_db": true
+  }
+  ```
+- **响应示例**: 
+  ```json
+  {
+    "success": true,
+    "results": [
+      {
+        "url": "https://example.com",
+        "risk_level": "低风险",
+        "risk_score": 15,
+        "risk_description": "该网站风险较低，内容正常，网络连接稳定。"
+      },
+      {
+        "url": "http://test.com",
+        "risk_level": "中风险",
+        "risk_score": 52,
+        "risk_description": "该网站存在一些可疑特征，建议进一步核实。"
+      }
+    ],
+    "saved_to_db": true
+  }
+  ```
+
+### 3. 调用示例
+
+#### 使用curl调用API
+
+```bash
+# 检查服务健康状态
+curl http://localhost:8000/api/health
+
+# 检测单个网站
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://example.com"}' http://localhost:8000/api/detect
+
+# 批量检测网站
+curl -X POST -H "Content-Type: application/json" -d '{"urls":["https://example.com","http://test.com"]}' http://localhost:8000/api/batch_detect
+```
+
+#### 使用Python调用API
+
+```python
+import requests
+import json
+
+# 检查服务健康状态
+response = requests.get('http://localhost:8000/api/health')
+print(response.json())
+
+# 检测单个网站
+data = {'url': 'https://example.com', 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/detect', json=data)
+print(response.json())
+
+# 批量检测网站
+data = {'urls': ['https://example.com', 'http://test.com'], 'save_to_db': True}
+response = requests.post('http://localhost:8000/api/batch_detect', json=data)
+print(response.json())
+```
+
+### 4. 注意事项
+
+1. **请求限制**: 为避免系统负载过高，建议批量检测时单次URL数量不超过100个
+2. **超时设置**: API请求默认超时时间为30秒，复杂检测可能需要更长时间
+3. **并发控制**: 系统内部会自动进行并发控制，无需在API调用层额外处理
+4. **错误处理**: 如遇错误，API会返回包含错误信息的JSON响应，请检查请求参数是否正确
+5. **数据库依赖**: 如不需要数据库功能，请确保`save_to_db`参数设置为`false`
+
 ## 🔧 高级配置
 
 ### 1. 自定义敏感关键词
